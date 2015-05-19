@@ -10,9 +10,12 @@ fi
 
 export INITRD=no
 
-# Adding oracle JDK from Ubuntu Repositories
+# Adding oracle JDK from Ubuntu repositories
 echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" >> /etc/apt/sources.list
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
+
+# Adding sbt repository
+echo "deb http://dl.bintray.com/sbt/debian /" >> /etc/apt/sources.list
 
 # Update repos
 apt-get update
