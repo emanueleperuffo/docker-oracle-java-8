@@ -1,4 +1,4 @@
-FROM emanueleperuffo/baseimage-debian
+FROM emanueleperuffo/baseimage-debian:latest
 MAINTAINER Emanuele Peruffo <info@emanueleperuffo.com>
 
 ENV HOME /root
